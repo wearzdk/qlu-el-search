@@ -173,6 +173,44 @@
   resolved "https://registry.npmmirror.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@intlify/core-base@9.2.2":
+  version "9.2.2"
+  resolved "https://registry.npmmirror.com/@intlify/core-base/-/core-base-9.2.2.tgz#5353369b05cc9fe35cab95fe20afeb8a4481f939"
+  integrity sha512-JjUpQtNfn+joMbrXvpR4hTF8iJQ2sEFzzK3KIESOx+f+uwIjgw20igOyaIdhfsVVBCds8ZM64MoeNSx+PHQMkA==
+  dependencies:
+    "@intlify/devtools-if" "9.2.2"
+    "@intlify/message-compiler" "9.2.2"
+    "@intlify/shared" "9.2.2"
+    "@intlify/vue-devtools" "9.2.2"
+
+"@intlify/devtools-if@9.2.2":
+  version "9.2.2"
+  resolved "https://registry.npmmirror.com/@intlify/devtools-if/-/devtools-if-9.2.2.tgz#b13d9ac4b4e2fe6d2e7daa556517a8061fe8bd39"
+  integrity sha512-4ttr/FNO29w+kBbU7HZ/U0Lzuh2cRDhP8UlWOtV9ERcjHzuyXVZmjyleESK6eVP60tGC9QtQW9yZE+JeRhDHkg==
+  dependencies:
+    "@intlify/shared" "9.2.2"
+
+"@intlify/message-compiler@9.2.2":
+  version "9.2.2"
+  resolved "https://registry.npmmirror.com/@intlify/message-compiler/-/message-compiler-9.2.2.tgz#e42ab6939b8ae5b3d21faf6a44045667a18bba1c"
+  integrity sha512-IUrQW7byAKN2fMBe8z6sK6riG1pue95e5jfokn8hA5Q3Bqy4MBJ5lJAofUsawQJYHeoPJ7svMDyBaVJ4d0GTtA==
+  dependencies:
+    "@intlify/shared" "9.2.2"
+    source-map "0.6.1"
+
+"@intlify/shared@9.2.2":
+  version "9.2.2"
+  resolved "https://registry.npmmirror.com/@intlify/shared/-/shared-9.2.2.tgz#5011be9ca2b4ab86f8660739286e2707f9abb4a5"
+  integrity sha512-wRwTpsslgZS5HNyM7uDQYZtxnbI12aGiBZURX3BTR9RFIKKRWpllTsgzHWvj3HKm3Y2Sh5LPC1r0PDCKEhVn9Q==
+
+"@intlify/vue-devtools@9.2.2":
+  version "9.2.2"
+  resolved "https://registry.npmmirror.com/@intlify/vue-devtools/-/vue-devtools-9.2.2.tgz#b95701556daf7ebb3a2d45aa3ae9e6415aed8317"
+  integrity sha512-+dUyqyCHWHb/UcvY1MlIpO87munedm3Gn6E9WWYdWrMuYLcoIoOEVDWSS8xSwtlPU+kA+MEQTP6Q1iI/ocusJg==
+  dependencies:
+    "@intlify/core-base" "9.2.2"
+    "@intlify/shared" "9.2.2"
+
 "@jridgewell/sourcemap-codec@^1.4.13":
   version "1.4.14"
   resolved "https://registry.npmmirror.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.14.tgz#add4c98d341472a289190b424efbdb096991bb24"
@@ -413,15 +451,15 @@
     "@vue/compiler-dom" "3.2.47"
     "@vue/shared" "3.2.47"
 
+"@vue/devtools-api@^6.2.1", "@vue/devtools-api@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.npmmirror.com/@vue/devtools-api/-/devtools-api-6.5.0.tgz#98b99425edee70b4c992692628fa1ea2c1e57d07"
+  integrity sha512-o9KfBeaBmCKl10usN4crU53fYtC1r7jJwdGKjPT24t348rHxgfpZ0xL3Xm/gLUYnc0oTp8LAmrxOeLyu6tbk2Q==
+
 "@vue/devtools-api@^6.4.5":
   version "6.4.5"
   resolved "https://registry.npmmirror.com/@vue/devtools-api/-/devtools-api-6.4.5.tgz#d54e844c1adbb1e677c81c665ecef1a2b4bb8380"
   integrity sha512-JD5fcdIuFxU4fQyXUu3w2KpAJHzTVdN+p4iOX2lMWSHMOoQdMAcpFLZzm9Z/2nmsoZ1a96QEhZ26e50xLBsgOQ==
-
-"@vue/devtools-api@^6.5.0":
-  version "6.5.0"
-  resolved "https://registry.npmmirror.com/@vue/devtools-api/-/devtools-api-6.5.0.tgz#98b99425edee70b4c992692628fa1ea2c1e57d07"
-  integrity sha512-o9KfBeaBmCKl10usN4crU53fYtC1r7jJwdGKjPT24t348rHxgfpZ0xL3Xm/gLUYnc0oTp8LAmrxOeLyu6tbk2Q==
 
 "@vue/reactivity-transform@3.2.47":
   version "3.2.47"
@@ -492,6 +530,28 @@
   integrity sha512-UrnhU+Cnufu4S6JLCPZnkWh0WwZGUp72ktOF2DFptMlOs3TOdVv8xJN53zhHGARmVOsz5KqOls09+J1NR6sBKw==
   dependencies:
     vue-demi "*"
+
+"@windicss/config@1.8.10":
+  version "1.8.10"
+  resolved "https://registry.npmmirror.com/@windicss/config/-/config-1.8.10.tgz#717f070889db153fdfead4bc4401f4120f3de4ae"
+  integrity sha512-O9SsC110b1Ik3YYa4Ck/0TWuCo7YFfA9KDrwD5sAeqscT5COIGK1HszdCT3oh0MJFej2wNrvpfyW9h6yQaW6PA==
+  dependencies:
+    debug "^4.3.4"
+    jiti "^1.16.0"
+    windicss "^3.5.6"
+
+"@windicss/plugin-utils@1.8.10":
+  version "1.8.10"
+  resolved "https://registry.npmmirror.com/@windicss/plugin-utils/-/plugin-utils-1.8.10.tgz#241d5a93650be826c9cbd2614341885b044251c7"
+  integrity sha512-Phqk5OW1w+Mv+ry6t7BzAeDq3aMhbI94gR49j9vQCufFfDGCHndhhjtMK0sBv+NPJUsIAIh6qayb1iwBCXUGrw==
+  dependencies:
+    "@antfu/utils" "^0.7.2"
+    "@windicss/config" "1.8.10"
+    debug "^4.3.4"
+    fast-glob "^3.2.12"
+    magic-string "^0.27.0"
+    micromatch "^4.0.5"
+    windicss "^3.5.6"
 
 acorn-jsx@^5.3.2:
   version "5.3.2"
@@ -1113,6 +1173,11 @@ isexe@^2.0.0:
   resolved "https://registry.npmmirror.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==
 
+jiti@^1.16.0:
+  version "1.17.2"
+  resolved "https://registry.npmmirror.com/jiti/-/jiti-1.17.2.tgz#9e193d171c76b1c518a46c243c410c0462fe22d1"
+  integrity sha512-Xf0nU8+8wuiQpLcqdb2HRyHqYwGk2Pd+F7kstyp20ZuqTyCmB9dqpX2NxaxFc1kovraa2bG6c1RL3W7XfapiZg==
+
 js-sdsl@^4.1.4:
   version "4.2.0"
   resolved "https://registry.npmmirror.com/js-sdsl/-/js-sdsl-4.2.0.tgz#278e98b7bea589b8baaf048c20aeb19eb7ad09d0"
@@ -1144,6 +1209,11 @@ klona@^2.0.4:
   version "2.0.5"
   resolved "https://registry.npmmirror.com/klona/-/klona-2.0.5.tgz#d166574d90076395d9963aa7a928fabb8d76afbc"
   integrity sha512-pJiBpiXMbt7dkzXe8Ghj/u4FfXOOa98fPW+bihOJ4SjnoijweJrNThJfd3ifXpXhREjpoF2mZVH1GfS9LV3kHQ==
+
+kolorist@^1.6.0:
+  version "1.7.0"
+  resolved "https://registry.npmmirror.com/kolorist/-/kolorist-1.7.0.tgz#8e22bc470ea2d2743dbd461808f8b5246b19f5f4"
+  integrity sha512-ymToLHqL02udwVdbkowNpzjFd6UzozMtshPQKVi5k1EjKRqKqBrOnE9QbLEb0/pV76SAiIT13hdL8R6suc+f3g==
 
 levn@^0.4.1:
   version "0.4.1"
@@ -1189,6 +1259,13 @@ magic-string@^0.25.7:
   dependencies:
     sourcemap-codec "^1.4.8"
 
+magic-string@^0.27.0:
+  version "0.27.0"
+  resolved "https://registry.npmmirror.com/magic-string/-/magic-string-0.27.0.tgz#e4a3413b4bab6d98d2becffd48b4a257effdbbf3"
+  integrity sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA==
+  dependencies:
+    "@jridgewell/sourcemap-codec" "^1.4.13"
+
 magic-string@^0.30.0:
   version "0.30.0"
   resolved "https://registry.npmmirror.com/magic-string/-/magic-string-0.30.0.tgz#fd58a4748c5c4547338a424e90fa5dd17f4de529"
@@ -1201,7 +1278,7 @@ merge2@^1.3.0, merge2@^1.4.1:
   resolved "https://registry.npmmirror.com/merge2/-/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"
   integrity sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==
 
-micromatch@^4.0.4:
+micromatch@^4.0.4, micromatch@^4.0.5:
   version "4.0.5"
   resolved "https://registry.npmmirror.com/micromatch/-/micromatch-4.0.5.tgz#bc8999a7cbbf77cdc89f132f6e467051b49090c6"
   integrity sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA==
@@ -1526,7 +1603,7 @@ slash@^3.0.0:
   resolved "https://registry.npmmirror.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
   integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
 
-source-map@^0.6.1:
+source-map@0.6.1, source-map@^0.6.1:
   version "0.6.1"
   resolved "https://registry.npmmirror.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
@@ -1665,6 +1742,16 @@ util-deprecate@^1.0.2:
   resolved "https://registry.npmmirror.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
 
+vite-plugin-windicss@^1.8.10:
+  version "1.8.10"
+  resolved "https://registry.npmmirror.com/vite-plugin-windicss/-/vite-plugin-windicss-1.8.10.tgz#a0e022c5d3def185fb2458a0ba41fc140421ddcb"
+  integrity sha512-scywsuzo46lcTBohspmF0WiwhWEte6p+OUVrX4yr7VMRvLHMHVfLtJReyD5pppjijG7YOwVsZn7XBWWZtF658Q==
+  dependencies:
+    "@windicss/plugin-utils" "1.8.10"
+    debug "^4.3.4"
+    kolorist "^1.6.0"
+    windicss "^3.5.6"
+
 vite@^4.1.4:
   version "4.1.4"
   resolved "https://registry.npmmirror.com/vite/-/vite-4.1.4.tgz#170d93bcff97e0ebc09764c053eebe130bfe6ca0"
@@ -1694,6 +1781,16 @@ vue-eslint-parser@^9.0.1:
     esquery "^1.4.0"
     lodash "^4.17.21"
     semver "^7.3.6"
+
+vue-i18n@^9.2.2:
+  version "9.2.2"
+  resolved "https://registry.npmmirror.com/vue-i18n/-/vue-i18n-9.2.2.tgz#aeb49d9424923c77e0d6441e3f21dafcecd0e666"
+  integrity sha512-yswpwtj89rTBhegUAv9Mu37LNznyu3NpyLQmozF3i1hYOhwpG8RjcjIFIIfnu+2MDZJGSZPXaKWvnQA71Yv9TQ==
+  dependencies:
+    "@intlify/core-base" "9.2.2"
+    "@intlify/shared" "9.2.2"
+    "@intlify/vue-devtools" "9.2.2"
+    "@vue/devtools-api" "^6.2.1"
 
 vue-router@^4.1.6:
   version "4.1.6"
@@ -1745,6 +1842,11 @@ which@^2.0.1:
   integrity sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
   dependencies:
     isexe "^2.0.0"
+
+windicss@^3.5.6:
+  version "3.5.6"
+  resolved "https://registry.npmmirror.com/windicss/-/windicss-3.5.6.tgz#30a34da76894d952a96c9a1921f2e91e13932183"
+  integrity sha512-P1mzPEjgFMZLX0ZqfFht4fhV/FX8DTG7ERG1fBLiWvd34pTLVReS5CVsewKn9PApSgXnVfPWwvq+qUsRwpnwFA==
 
 word-wrap@^1.2.3:
   version "1.2.3"

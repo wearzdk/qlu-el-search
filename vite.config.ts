@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
+import WindiCSS from 'vite-plugin-windicss'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -25,6 +26,8 @@ export default defineConfig({
         // presets
         'vue',
         'vue-router',
+        'vue-i18n',
+        '@vueuse/core',
       ],
       dirs: ['./src/hooks'],
       dts: './src/auto-imports.d.ts',
@@ -40,5 +43,6 @@ export default defineConfig({
         globalsPropValue: true, // Default `true`, (true | false | 'readonly' | 'readable' | 'writable' | 'writeable')
       },
     }),
+    WindiCSS(),
   ],
 })

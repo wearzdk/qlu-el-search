@@ -1,5 +1,5 @@
 import type { RouteRecordRaw, Router } from 'vue-router'
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import NProgress from 'nprogress'
 
 // 设置NProgress样式
@@ -10,20 +10,20 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'BaseLayout',
-    component: () => import('@/layout/BaseLayout.vue'),
+    component: () => import('@/search/layout/BaseLayout.vue'),
     children: [
       {
         path: '/',
         name: 'Home',
-        component: () => import('@/views/HomePage.vue'),
+        component: () => import('@/search/views/HomePage.vue'),
       },
     ],
   },
 ]
 
 const router: Router = createRouter({
-  // 新的vue-router4 使用 history路由模式 和 base前缀
-  history: createWebHistory(import.meta.env.VITE_BASE),
+  // 使用 hash 模式
+  history: createWebHashHistory(),
   routes,
 })
 

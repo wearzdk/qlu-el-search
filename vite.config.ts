@@ -2,6 +2,8 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import WindiCSS from 'vite-plugin-windicss'
+import Components from 'unplugin-vue-components/vite'
+import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -9,6 +11,11 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': '/src',
+    },
+  },
+  build: {
+    rollupOptions: {
+      input: ['search.html', 'manager.html'],
     },
   },
   plugins: [
@@ -28,6 +35,9 @@ export default defineConfig({
         'vue-router',
         'vue-i18n',
         '@vueuse/core',
+        {
+          'naive-ui': ['useDialog', 'useMessage', 'useNotification', 'useLoadingBar'],
+        },
       ],
       dirs: ['./src/hooks'],
       dts: './src/auto-imports.d.ts',
@@ -44,5 +54,10 @@ export default defineConfig({
       },
     }),
     WindiCSS(),
+    Components({
+      dts: './src/components.d.ts',
+      dirs: ['./src/**/components'],
+      resolvers: [NaiveUiResolver()],
+    }),
   ],
 })

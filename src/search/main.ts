@@ -3,6 +3,9 @@ import App from './App.vue'
 import router from './router'
 import { UserModule } from './types'
 
+// windicss
+import 'virtual:windi.css'
+
 const app = createApp(App)
 
 app.use(router)

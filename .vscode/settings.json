@@ -35,4 +35,7 @@
   "eslint.nodeEnv": "",
   "eslint.nodePath": "",
   "eslint.format.enable": true,
+  "i18n-ally.localesPaths": [
+    "locales"
+  ],
 }
